@@ -247,3 +247,8 @@ main > :last-child {
 .linkStyle {
   line-break: anywhere;
 }
+
+.divider {
+  border-bottom: solid 2px rgb(250, 242, 235);
+  padding-bottom: 10px;
+}
