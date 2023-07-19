@@ -1,6 +1,6 @@
 @font-face {
   font-family: "BerlinSansFB";
-  src: url("../fonts/OCRAEXT.TTF") format("truetype");
+  src: url("../fonts/RedHatText-Regular.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -24,7 +24,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  background-color: rgb(19, 19, 19);
+  background-color: #0B2447;
 }
 
 p,
@@ -90,8 +90,11 @@ header {
   flex-direction: column;
 
   z-index: 99999;
-  position: sticky;
-  background-color: #231c24;
+  background-color: 	#19376D;
+}
+@media (min-width:600px) {
+  header{position: sticky;}
+  
 }
 
 .Logo {
@@ -112,6 +115,7 @@ nav {
   /* margin-top: auto; */
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 4px;
   /* margin-bottom: 5px; */
   z-index: 5;
 }
@@ -149,10 +153,10 @@ footer #Socials {
 }
 
 /* Used for adding a dropshadow to elements */
-.BoxShadow {
+/* .BoxShadow {
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
-  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7); */
 }
 
 /* First and last element of main should have a margin to not be covered from the header and footer */
@@ -164,6 +168,11 @@ main > :last-child {
   margin-bottom: 100px;
 }
 
+.title {
+  background-color: #576CBC;
+  padding-left: 8px;
+}
+
 .Container {
   width: 700px;
 
@@ -173,11 +182,11 @@ main > :last-child {
   margin-top: 25px;
   margin-bottom: 25px;
 
-  padding-left: 25px;
-  padding-right: 25px;
-  padding-bottom: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
 
-  background-color: #231c24;
+  background-color: #19376D;
 
   z-index: 3;
 
@@ -249,6 +258,6 @@ main > :last-child {
 }
 
 .divider {
-  border-bottom: solid 2px rgb(250, 242, 235);
+  border-bottom: solid 2px #A5D7E8;
   padding-bottom: 10px;
 }
