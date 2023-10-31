@@ -85,7 +85,7 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -93,7 +93,7 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
 
 a {
   color: inherit;
@@ -194,15 +194,23 @@ header {
   width: 100%;
   top: 0px;
   left: 0px;
+  position: fixed;
 
   flex-direction: column;
 
   z-index: 99999;
   background-color: #19376d;
 }
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+  :root {
+    --height-header: 50px;
+  }
   header {
-    position: sticky;
+    position: absolute;
+  }
+  nav {
+    visibility: hidden;
+    height: 0px;
   }
 }
 
@@ -227,6 +235,8 @@ nav {
   margin-bottom: 4px;
   /* margin-bottom: 5px; */
   z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navItems {
@@ -282,7 +292,7 @@ main > :last-child {
 }
 
 .Container {
-  width: 700px;
+  width: 100%;
 
   max-width: 100%;
   /* min-height: 70vh; */
@@ -320,7 +330,7 @@ main > :last-child {
 }
 
 /* Changes on large screens */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .Container {
     max-width: 75vw;
   }
@@ -366,6 +376,8 @@ main > :last-child {
 }
 
 .divider {
+  /* margin-top: 30px; */
   border-bottom: solid 2px #a5d7e8;
   padding-bottom: 10px;
+  margin-bottom: 20px;
 }
