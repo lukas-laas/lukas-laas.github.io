@@ -36,6 +36,7 @@ export default function Home() {
                   </p>
                 </>
               ),
+              imageSlider: true,
             },
             {
               sub_header: (
@@ -189,7 +190,7 @@ export default function Home() {
           <a href="https://www.credly.com/badges/cea83095-b6e5-4f85-b3e3-7558b9d7ac76">
             MTA: Introduction to Programming Using Python
           </a>
-          {/* <div
+          <div
             style={{
               backgroundColor: "white",
               width: "150px",
@@ -207,7 +208,7 @@ export default function Home() {
               async
               src="//cdn.credly.com/assets/utilities/embed.js"
             ></script>
-          </div> */}
+          </div>
           <h2>GitHub</h2>
           <a
             className="linkStyle"

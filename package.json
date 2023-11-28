@@ -16,19 +16,17 @@
     "css-loader": "^6.8.1",
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
-    "keen-slider": "^6.8.6",
     "next": "13.4.19",
     "next-images": "^1.8.5",
     "next-transpile-modules": "^10.0.1",
     "react": "^18.2.0",
     "react-dom": "18.2.0",
+    "style-loader": "^3.3.3",
     "typescript": "5.2.2"
   },
   "main": "index.js",
   "repository": "https://github.com/lukas-laas/lukas-laas.github.io.git",
   "author": "lukas-laas <111971517+lukas-laas@users.noreply.github.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@types/react-slick": "^0.23.10"
-  }
+  "devDependencies": {}
 }

@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
-// const withImages = require("next-images")
+const withImages = require("next-images")
 // const withTM = require("next-transpile-modules")(["@madzadev/image-slider"])
 
 const nextConfig = {
-  //   output: "export",
+  // output: "export",
   //   reactStrictMode: true,
   //   basePath: "/github-pages",
 }
