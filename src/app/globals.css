@@ -57,13 +57,13 @@
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
     --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
+      whitesmoke80,
+      whitesmoke40,
+      whitesmoke30,
+      whitesmoke20,
+      whitesmoke10,
+      whitesmoke10,
+      whitesmoke80
     );
 
     --callout-rgb: 20, 20, 20;
@@ -132,7 +132,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  background-color: #0b2447;
+  background-color: lightskyblue;
 }
 
 p,
@@ -144,7 +144,7 @@ h4,
 th,
 td {
   /* font-family: "BerlinSansFB"; */
-  color: rgb(250, 242, 235);
+  color: #2a2a2a;
 }
 
 p,
@@ -199,7 +199,7 @@ header {
   flex-direction: column;
 
   z-index: 99999;
-  background-color: #19376d;
+  background-color: whitesmoke;
 }
 @media (max-width: 600px) {
   :root {
@@ -263,7 +263,7 @@ footer {
   padding-top: 10px;
   padding-bottom: 20px;
 
-  background-color: #231c24;
+  background-color: whitesmoke;
 }
 
 /* Inherit visability from parent to show icons */
@@ -287,12 +287,15 @@ main > :last-child {
 }
 
 .title {
-  background-color: #576cbc;
   padding-left: 8px;
 }
 
 .Container {
   width: 100%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 
   max-width: 100%;
   /* min-height: 70vh; */
@@ -300,11 +303,9 @@ main > :last-child {
   margin-top: 25px;
   margin-bottom: 25px;
 
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  padding: 1rem;
 
-  background-color: #19376d;
+  background-color: whitesmoke;
 
   z-index: 3;
 
@@ -380,4 +381,85 @@ main > :last-child {
   border-bottom: solid 2px #a5d7e8;
   padding-bottom: 10px;
   margin-bottom: 20px;
+}
+
+/* slider css */
+._1I_qj {
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+._2hTXI {
+  width: 40px;
+  height: 40px; /* Safari/Chrome */
+  filter: invert(100%);
+}
+
+._mLQYC {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  left: 20px;
+  color: white;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s;
+}
+
+._mLQYC:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+._24aXX {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  right: 20px;
+  color: white;
+  display: grid;
+  place-items: center;
+  transition: transform 0.2s;
+}
+
+._24aXX:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}
+
+._3MuXE {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+._3U2py {
+  width: 15px;
+  height: 15px;
+  background-color: lightblue;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+._3U2py:hover {
+  cursor: pointer;
+  background-color: rgb(76, 171, 202);
+}
+
+._2uiQN {
+  width: 15px;
+  height: 15px;
+  background-color: rgb(76, 171, 202);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+._2uiQN:hover {
+  cursor: pointer;
 }
