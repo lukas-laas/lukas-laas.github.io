@@ -18,7 +18,7 @@ export const Container = (Props: Props) => {
       {Props.content.map((item, i) => (
         <div key={i} className="divider">
           <h2>{item.sub_header}</h2>
-          <p>{item.body}</p>
+          {item.body}
         </div>
       ))}
     </div>
