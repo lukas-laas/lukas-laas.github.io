@@ -1,6 +1,5 @@
 import { ReactNode } from "react"
 import Slider from "@madzadev/image-slider"
-
 const images = [
   { url: "/images/image (1).png" },
   { url: "/images/image (2).png" },
