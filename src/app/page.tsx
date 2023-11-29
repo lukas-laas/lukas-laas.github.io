@@ -3,6 +3,16 @@
 import Image from "next/image"
 import styles from "./page.module.css"
 import { Container } from "@/components/Container"
+import Slider from "@madzadev/image-slider"
+import "@madzadev/image-slider/dist/index.css"
+
+const images = [
+  { url: "/images/image (1).png" },
+  { url: "/images/image (2).png" },
+  { url: "/images/image (3).png" },
+  { url: "/images/image (4).png" },
+  { url: "/images/image (5).png" },
+]
 
 export default function Home() {
   return (
@@ -35,6 +45,15 @@ export default function Home() {
                     Added some features to their public website, including some
                     translations and adding some new content.
                   </p>
+                  <div style={{ display: "flex" }}>
+                    <Slider
+                      showArrowControls={false}
+                      autoPlayInterval={6000}
+                      imageList={images}
+                      width={800}
+                      height={500}
+                    />
+                  </div>
                 </>
               ),
               imageSlider: true,
@@ -191,7 +210,7 @@ export default function Home() {
           <a href="https://www.credly.com/badges/cea83095-b6e5-4f85-b3e3-7558b9d7ac76">
             MTA: Introduction to Programming Using Python
           </a>
-          <div
+          {/* <div
             style={{
               backgroundColor: "white",
               width: "150px",
@@ -202,14 +221,14 @@ export default function Home() {
               data-iframe-width="150"
               data-iframe-height="270"
               data-share-badge-id="cea83095-b6e5-4f85-b3e3-7558b9d7ac76"
-              data-share-badge-host="https://www.credly.com"
+              data-share-badge-host="//https://www.credly.com"
             ></div>
             <script
               type="text/javascript"
               async
               src="//cdn.credly.com/assets/utilities/embed.js"
             ></script>
-          </div>
+          </div> */}
           <h2>GitHub</h2>
           <a
             className="linkStyle"
