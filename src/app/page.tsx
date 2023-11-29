@@ -27,7 +27,13 @@ export default function Home() {
                 <>
                   {" "}
                   2 MONTH SUMMER JOB AT{" "}
-                  <a href="https://brick.tech" style={{ fontSize: "inherit" }}>
+                  <a
+                    href="https://brick.tech"
+                    style={{
+                      fontSize: "inherit",
+                      textDecorationLine: "underline",
+                    }}
+                  >
                     BRICK TECHNOLOGY
                   </a>
                 </>
@@ -42,8 +48,14 @@ export default function Home() {
                     the pictures of brick venues from their dashboard.
                   </p>
                   <p>
-                    Added some features to their public website, including some
-                    translations and adding some new content.
+                    Added some features to{" "}
+                    <a
+                      href="brick.tech"
+                      style={{ textDecorationLine: "underline" }}
+                    >
+                      their public website
+                    </a>
+                    , including some translations and adding some new content.
                   </p>
                   <div style={{ display: "flex" }}>
                     <Slider
@@ -61,8 +73,14 @@ export default function Home() {
             {
               sub_header: (
                 <>
-                  10 WEEK INTERNSHIP AT
-                  <a href="https://brick.tech" style={{ fontSize: "inherit" }}>
+                  10 WEEK INTERNSHIP AT{" "}
+                  <a
+                    href="https://brick.tech"
+                    style={{
+                      fontSize: "inherit",
+                      textDecorationLine: "underline",
+                    }}
+                  >
                     BRICK TECHNOLOGY
                   </a>
                 </>
