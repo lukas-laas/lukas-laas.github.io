@@ -57,7 +57,13 @@ export default function Home() {
                     </a>
                     , including some translations and adding some new content.
                   </p>
-                  <div style={{ display: "flex" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      maxWidth: "100%",
+                      overflow: "hidden",
+                    }}
+                  >
                     <Slider
                       showArrowControls={false}
                       autoPlayInterval={6000}
@@ -95,6 +101,19 @@ export default function Home() {
                   </p>
                 </>
               ),
+            },
+          ]}
+        />
+        <Container
+          header={"Personal Projects"}
+          content={[
+            {
+              sub_header: (
+                <a href="lukas-music.vercel.app">
+                  Music portfolio: lukas-music.vercel.app
+                </a>
+              ),
+              body: <>A Next.js app where I can share my musical endeavours.</>,
             },
           ]}
         />
