@@ -191,7 +191,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/pizzeriarafiki.png"
+                src="/images/pizzeriarafiki.PNG"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
@@ -212,7 +212,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/bengansbiluthyrning.png"
+                src="/images/bengansbiluthyrning.PNG"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
