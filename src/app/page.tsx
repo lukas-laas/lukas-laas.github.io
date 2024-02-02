@@ -154,7 +154,7 @@ export default function Home() {
             <a href="https://nti-nedrakning.vercel.app" target="_blank">
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/nti-nedrakning.PNG"
+                src="/images/nti-nedrakning.png"
                 alt="Screenshot of website"
                 width={828}
                 height={465}
@@ -191,7 +191,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/pizzeriarafiki.PNG"
+                src="/images/pizzeriarafiki.png"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
@@ -212,7 +212,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/bengansbiluthyrning.PNG"
+                src="/images/bengansbiluthyrning.png"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
