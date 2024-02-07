@@ -28,7 +28,7 @@ export default function Home() {
                   {" "}
                   2 MONTH SUMMER JOB AT{" "}
                   <a
-                    href="https://brick.tech"
+                    href="https://www.brick.tech"
                     style={{
                       fontSize: "inherit",
                       textDecorationLine: "underline",
@@ -50,7 +50,7 @@ export default function Home() {
                   <p>
                     Added some features to{" "}
                     <a
-                      href="brick.tech"
+                      href="https://www.brick.tech"
                       style={{ textDecorationLine: "underline" }}
                     >
                       their public website
@@ -81,7 +81,7 @@ export default function Home() {
                 <>
                   10 WEEK INTERNSHIP AT{" "}
                   <a
-                    href="https://brick.tech"
+                    href="https://www.brick.tech"
                     style={{
                       fontSize: "inherit",
                       textDecorationLine: "underline",
@@ -109,11 +109,25 @@ export default function Home() {
           content={[
             {
               sub_header: (
-                <a href="lukas-music.vercel.app">
+                <a href="https://lukas-music.vercel.app">
                   Music portfolio: lukas-music.vercel.app
                 </a>
               ),
-              body: <>A Next.js app where I can share my musical endeavours.</>,
+              body: (
+                <>
+                  <a href="https://lukas-music.vercel.app" target="_blank">
+                    <Image
+                      style={{ width: "50%", height: "auto" }}
+                      src={"/images/Screenshot 2024-02-06 171606.png"}
+                      width={1920}
+                      height={1080}
+                      alt="Screenshot of website"
+                    />
+                  </a>
+
+                  <p>A Next.js app where I can share my musical endeavours.</p>
+                </>
+              ),
             },
           ]}
         />
@@ -191,7 +205,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/pizzeriarafiki.png"
+                src="/images/pizzeriarafiki.PNG"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
@@ -212,7 +226,7 @@ export default function Home() {
             >
               <Image
                 style={{ width: "50%", height: "auto" }}
-                src="/images/bengansbiluthyrning.png"
+                src="/images/bengansbiluthyrning.PNG"
                 alt="Screenshot of website"
                 width={1920}
                 height={1080}
@@ -269,7 +283,7 @@ export default function Home() {
           <h2>GitHub</h2>
           <a
             className="linkStyle"
-            href="https://github.com/lukas-laas"
+            href="https://www.github.com/lukas-laas"
             target="_blank"
           >
             github.com/lukas-laas
