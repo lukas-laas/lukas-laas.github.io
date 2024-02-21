@@ -114,7 +114,7 @@ a {
 } */
 
 :root {
-  --height-header: 120px;
+  --height-header: 0px;
   --main-colors: #1b1b1b;
   --container-color: #1b1b1be0;
 }
@@ -195,13 +195,14 @@ header {
   top: 0px;
   left: 0px;
   position: fixed;
+  visibility: hidden;
 
   flex-direction: column;
 
   z-index: 99999;
   background-color: whitesmoke;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   :root {
     --height-header: 50px;
   }
@@ -212,7 +213,7 @@ header {
     visibility: hidden;
     height: 0px;
   }
-}
+} */
 
 .Logo {
   /* transform: scale(2);
@@ -315,7 +316,7 @@ main > :last-child {
     Set the scroll margin top on all containers, also added 2.5em for som room over the element
     Source: https://stackoverflow.com/questions/38069213/add-padding-top-to-scroll-when-using-href-id
   */
-  scroll-margin-top: calc(var(--height-header) + 2.5em);
+  /* scroll-margin-top: calc(var(--height-header) + 2.5em); */
 }
 
 .Wrapper {
@@ -333,7 +334,7 @@ main > :last-child {
 /* Changes on large screens */
 @media (min-width: 768px) {
   .Container {
-    max-width: 75vw;
+    max-width: 48rem;
   }
   /* Change layout of the footer to columns instead of row */
   footer {
@@ -342,10 +343,19 @@ main > :last-child {
 
     height: 100%;
   }
+  :root {
+    --height-header: 50px;
+  }
 
   footer #Socials {
     display: flex;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    visibility: visible;
   }
 }
 
